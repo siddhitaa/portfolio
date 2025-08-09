@@ -1,138 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhita Bagwe | Data Analyst Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
-            color: #333;
-        }
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        header p {
-            margin-top: 0.5rem;
-            font-size: 1.1rem;
-            color: #d1d5db;
-        }
-        nav {
-            background-color: #111827;
-            display: flex;
-            justify-content: center;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .project-card:hover {
-            transform: scale(1.02);
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: #111827;
-        }
-        .project-card p {
-            color: #4b5563;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #1f2937;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siddhita Bagwe - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Siddhita Bagwe</h1>
-        <p>Data Analyst | SQL • Tableau • Python</p>
-    </header>
-
+  <header>
     <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <div class="logo">Siddhita<span class="accent">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
+  </header>
 
-    <div class="container">
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>📊 Sample Dashboard Project</h3>
-                    <p>Interactive Tableau dashboard analyzing e-commerce sales trends.</p>
-                    <a href="#" target="_blank">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>🛠 ETL Automation</h3>
-                    <p>Python + MySQL pipeline replacing Tableau Prep flow, improving performance.</p>
-                    <a href="#" target="_blank">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>📈 Fashion Week Trends</h3>
-                    <p>Scraped fashion week articles to find top themes and styles.</p>
-                    <a href="#" target="_blank">View Project →</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" style="margin-top: 2rem;">
-            <h2 class="section-title">About Me</h2>
-            <p>I am a data analyst with 4+ years of experience in SQL, Tableau, and Python. I specialize in creating interactive dashboards, optimizing ETL pipelines, and uncovering actionable insights from complex datasets. I enjoy turning messy data into meaningful stories that drive business impact.</p>
-        </section>
-
-        <section id="contact" style="margin-top: 2rem;">
-            <h2 class="section-title">Contact</h2>
-            <p>📧 Email: <a href="mailto:siddhita.bagwe@example.com">siddhita.bagwe@example.com</a></p>
-            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/siddhitabagwe/" target="_blank">linkedin.com/in/siddhitabagwe</a></p>
-            <p>💻 GitHub: <a href="https://github.com/siddhitaa" target="_blank">github.com/siddhitaa</a></p>
-        </section>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m Siddhita</h1>
+      <p>Data Analyst | Python Enthusiast | Tableau Visualizer</p>
+      <a href="#projects" class="btn-primary">View Projects</a>
     </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Siddhita Bagwe | Built with ❤️ and GitHub Pages</p>
-    </footer>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I build data-driven solutions and create beautiful, interactive dashboards to tell compelling stories with data.
+      Passionate about Python, machine learning, and turning raw data into actionable insights.
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Example Project Card -->
+      <div class="project-card">
+        <h3>Customer Churn Prediction</h3>
+        <p>End-to-end churn prediction using Python and an interactive Tableau dashboard.</p>
+        <div class="project-links">
+          <a href="https://github.com/siddhitaa/customer-churn-prediction" target="_blank" rel="noopener">Code</a>
+          <a href="https://public.tableau.com/views/KaggleTelcoCustomerChurn/CustomerChurnRateDashboard" target="_blank" rel="noopener">Dashboard</a>
+        </div>
+      </div>
+      <!-- Add more projects here -->
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Let’s connect! Reach out via email or LinkedIn.</p>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:siddhita.bagwe@example.com">siddhita.bagwe@example.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/siddhitabagwe" target="_blank" rel="noopener">linkedin.com/in/siddhitabagwe</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Siddhita Bagwe — Built with ❤️</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
